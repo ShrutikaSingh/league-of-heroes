@@ -1,0 +1,7 @@
+<p>hero-detail works!</p>
+<div *ngIf="selectedhero">
+    <h2>{{selectedhero.name}} Details!</h2>
+    {{selectedhero.id}}
+    {{selectedhero.name}}
+    <input type="text" [(ngModel)]="selectedhero.name" placeholder="hero name"/>
+</div>
