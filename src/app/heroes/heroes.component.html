@@ -1,9 +1,12 @@
-<h2>{{hero.name | uppercase}} Details!</h2>
+<h2>Heroes Details!</h2>
+<li *ngFor="let hero of heroes" (click)="onSelect(hero)">
+  
 <ul>
-    <p>Id: {{hero.id}}</p>
-    <p>Name: {{hero.name}}</p>
+    <p><span class="badge">Id: {{hero.id}}  </span>
+    Name: {{hero.name}}</p>
 </ul>
 
 <div>
-    <input type="text" [(ngModel)]="hero.name" placeholder="hero name"/>
+   <!-- <input type="text" [(ngModel)]="hero.name" placeholder="hero name"/> --->
 </div>
+</li>
